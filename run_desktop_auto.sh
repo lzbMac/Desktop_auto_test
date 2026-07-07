@@ -2,6 +2,7 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+APPIUM_HOME="${APPIUM_HOME:-${ROOT_DIR}/.appium-home}"
 APPIUM_HOST="${APPIUM_HOST:-127.0.0.1}"
 APPIUM_PORT="${APPIUM_PORT:-4723}"
 APPIUM_URL="http://${APPIUM_HOST}:${APPIUM_PORT}/status"
@@ -9,6 +10,8 @@ APPIUM_PID=""
 MODE="${1:-core}"
 VENV_DIR="${VENV_DIR:-.venv}"
 PYTHON_BIN="${PYTHON_BIN:-}"
+
+export APPIUM_HOME
 
 cd "$ROOT_DIR"
 mkdir -p reports
@@ -21,6 +24,7 @@ Usage:
   ./run_desktop_auto.sh core
 
 Environment:
+  APPIUM_HOME defaults to .appium-home under the project root
   APPIUM_HOST defaults to 127.0.0.1
   APPIUM_PORT defaults to 4723
   PYTHON_BIN overrides the Python executable

@@ -11,6 +11,8 @@ htmlcov/
 .venv/
 venv/
 env/
+.appium-home/
+.npm-cache/
 
 # macOS
 .DS_Store

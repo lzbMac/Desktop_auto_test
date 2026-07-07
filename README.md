@@ -28,7 +28,7 @@ pip install -r requirements.txt
 安装 Appium mac2 driver：
 
 ```bash
-appium driver install mac2
+APPIUM_HOME="$PWD/.appium-home" appium driver install mac2
 ```
 
 确认 ffprobe 可用：
@@ -105,7 +105,7 @@ python3 -m pytest tests/unit -q
 启动 Appium：
 
 ```bash
-appium --base-path /
+APPIUM_HOME="$PWD/.appium-home" appium --base-path /
 ```
 
 执行 macOS 桌面 UI 冒烟测试：
