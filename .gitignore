@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Local virtualenv
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# Local machine config
+config/test_config.json
+!config/test_config.example.json
+
+# Runtime artifacts
+reports/
+outputs/
+screenshots/
+logs/
+test-results/
+playwright-report/

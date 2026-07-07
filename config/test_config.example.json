@@ -1,0 +1,22 @@
+{
+  "default_timeout_seconds": 60,
+  "task_timeout_seconds": 60,
+  "app": {
+    "bundle_id": "com.yourcompany.VideoApp",
+    "app_path": "/Applications/YourVideoApp.app",
+    "launch_timeout_seconds": 30
+  },
+  "selectors": {
+    "main_window": "mainWindow",
+    "import_button": "btnImport",
+    "file_list": "fileList",
+    "convert_tab": "tabConvert",
+    "compress_tab": "tabCompress",
+    "audio_tab": "tabAudio",
+    "gif_tab": "tabGif",
+    "output_format_dropdown": "comboOutputFormat",
+    "output_dir_button": "btnOutputDir",
+    "start_button": "btnStart",
+    "task_status": "labelTaskStatus"
+  }
+}
